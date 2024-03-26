@@ -4,8 +4,13 @@ public class Main {
         conferenceEvent.calculateEventCost();
         System.out.println(conferenceEvent.toString());
 
-        MusicConcertEvent musicConcertEvent = new MusicConcertEvent("E002", "Music Festival", "London", "Peng Tian", 50, 3, 1000);
+        MusicEvent musicConcertEvent = new MusicEvent("E001", "AI Conference", "Paris", "Peng Tian", 50, 2, 1000);
         musicConcertEvent.calculateEventCost();
         System.out.println(musicConcertEvent.toString());
+
+        PastEvents pastEvent = new PastEvents("E001", "AI Conference", "Paris", "Peng Tian",50, 2); 
+        pastEvent.setPaymentDetails("Pending", true);      
+        System.out.println(pastEvent);
+    
     }
 }

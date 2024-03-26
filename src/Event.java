@@ -1,4 +1,4 @@
-public class Event {
+public abstract class Event {
 
    public static final double insuranceCost = 1000.00;
    public static final double baseEventCost = 5000;
@@ -12,6 +12,7 @@ public class Event {
    private Double eventCost;
    private int totalParticipants;
    private int totalEventDays;
+   
 
    public Event(){};
 
@@ -19,8 +20,7 @@ public class Event {
         this.eventID = eventID;
         this.eventName = eventName;
         this.eventLocation = eventLocation;
-        this.pointOfContact = pointOfContact;
-        this.eventCost = eventCost;
+        this.pointOfContact = pointOfContact;    
         this.totalParticipants = totalParticipants;
         this.totalEventDays = totalEventDays;
     }
